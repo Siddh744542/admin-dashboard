@@ -1,19 +1,21 @@
-
 import { CssBaseline, ThemeProvider } from "@mui/material"
-import createTheme from "@mui/material/styles"
+import {createTheme} from "@mui/material/styles"
 import { useMemo } from "react";
 import { useSelector } from "react-redux"
-import { themeSettings } from "./theme"
+import { themeSettings } from "theme"
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
-import Dashboard from "./scenes/dashboard/index";
+import Dashboard from "scenes/dashboard";
+import Layout from "scenes/layout";
 function App() {
   const mode = useSelector((state)=>state.global.mode);
+  console.log(mode);
   const theme = useMemo(()=>createTheme(themeSettings(mode)), [mode]);
   return (
   <div className='app'>
+    <h1>hello</h1>
     <BrowserRouter>
 
-    <h1>hello</h1>
+    
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <Routes>
