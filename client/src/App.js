@@ -8,14 +8,10 @@ import Dashboard from "scenes/dashboard";
 import Layout from "scenes/layout";
 function App() {
   const mode = useSelector((state)=>state.global.mode);
-  console.log(mode);
   const theme = useMemo(()=>createTheme(themeSettings(mode)), [mode]);
   return (
   <div className='app'>
-    <h1>hello</h1>
     <BrowserRouter>
-
-    
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <Routes>
