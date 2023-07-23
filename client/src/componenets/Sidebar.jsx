@@ -29,7 +29,7 @@ import {
     PieChartOutlined
 } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import FlexBetween from './FlexBetween';
 import profileImage from "assets/Profile.jpg"
 
