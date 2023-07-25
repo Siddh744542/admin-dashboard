@@ -134,8 +134,8 @@ function Sidebar({
                 <Box m="1.5rem 2rem 2rem 3rem">
                     <FlexBetween color={theme.palette.secondary.main}>
                         <Box display="flex" alignItems="center" gap="0.5rem">
-                            <Typography varient="h4" fontWeight="bold">
-                                ECOMVISON
+                            <Typography variant="h4" fontWeight="bold">
+                            ANALYTICS
                             </Typography>
                             
                         </Box>

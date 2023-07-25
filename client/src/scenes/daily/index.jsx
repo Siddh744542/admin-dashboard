@@ -123,7 +123,7 @@ const Daily = () => {
                      tickSize: 5,
                      tickPadding: 5,
                      tickRotation: 90,
-                     legend: "Month",
+                     legend: "Date",
                      legendOffset: 60,
                      legendPosition: 'middle'
                  }}
